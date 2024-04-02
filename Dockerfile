@@ -1,4 +1,4 @@
-FROM maven:3.8.8-eclipse-temurin-21-alpine
-COPY target/smartContactManager.jar smartContactManager.jar
+FROM openjdk:21
 EXPOSE 8080
+ADD target/smartContactManager.jar smartContactManager.jar
 ENTRYPOINT ["java","-jar","/smartContactManager.jar"]

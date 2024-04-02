@@ -9,11 +9,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.smart.entities.User;
 
-public class CustomUserDetails implements UserDetails {
+public class UserDetailsImpl implements UserDetails {
 
 	private User user;
 
-	public CustomUserDetails(User user) {
+	public UserDetailsImpl(User user) {
 		super();
 		this.user = user;
 	}
